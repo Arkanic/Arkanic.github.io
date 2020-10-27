@@ -8,7 +8,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   target-branch: master 
-  github-token: $GH_TOKEN
+  github-token: $github_token
   keep-history: true
   verbose: true
   on:
