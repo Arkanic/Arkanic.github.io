@@ -1,0 +1,14 @@
+os: osx
+language: bash
+dist: xenial
+script:
+  - chmod +x ./sitemap.sh
+  - ./sitemap.sh
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $github_token
+  keep-history: true
+  verbose: true
+  on:
+    branch: master

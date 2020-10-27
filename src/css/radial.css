@@ -1,0 +1,219 @@
+.glass {
+  background-image: radial-gradient(circle closest-side, rgba(38,38,38,0.2), rgba(0,0,0,0.63));
+  background-size: 100% 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.glass::before {
+  position: absolute;
+  width: 56%;
+  height: 26%;
+  top: 4%;
+  left: 22%;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(207,207,207,0.23), rgba(30,30,30,0.06));
+  content: '';
+}
+.glass::after {
+  position: absolute;
+  width: 38%;
+  height: 19%;
+  bottom: 3%;
+  left: 31%;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(93,93,93,0.1), rgba(0,0,0,0.18));
+  content: '';
+}
+.flower {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.flower .spinner,
+.flower .inner,
+.flower .counterspin {
+  height: 100%;
+}
+.flower .spinner {
+  animation: spin 45s infinite linear;
+}
+.flower .counterspin {
+  animation: counter-spin 45s infinite linear;
+}
+.flower .cover {
+  width: 120px;
+  height: 120px;
+  background-image: url("../img/profile/cat.jpg");
+  background-size: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 4px #d1d1d1, 0 0 20px 4px #000;
+  position: absolute;
+  top: 0;
+}
+.flower a {
+  display: block;
+}
+.flower .child {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.flower .child .leaf {
+  height: 100%;
+  border-radius: 50%;
+  visibility: hidden;
+  transition: transform 3.2s ease-in-out;
+}
+.flower .child .leaf img {
+  width: 64px;
+  height: 64px;
+  left: 28px;
+  top: 28px;
+  position: absolute;
+  border: none;
+}
+.flower .child:nth-child(1) {
+  transform: rotate(-90deg);
+}
+.flower .child:nth-child(1) .leaf {
+  background-color: #3535e0;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+.flower .child:nth-child(1) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(90deg);
+}
+.flower .child:nth-child(2) {
+  transform: rotate(-18deg);
+}
+.flower .child:nth-child(2) .leaf {
+  background-color: #f00;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+.flower .child:nth-child(2) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(18deg);
+}
+.flower .child:nth-child(3) {
+  transform: rotate(54deg);
+}
+.flower .child:nth-child(3) .leaf {
+  background-color: #00bd00;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+.flower .child:nth-child(3) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-54deg);
+}
+.flower .child:nth-child(4) {
+  transform: rotate(126deg);
+}
+.flower .child:nth-child(4) .leaf {
+  background-color: #ff0;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+.flower .child:nth-child(4) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-126deg);
+}
+.flower .child:nth-child(5) {
+  transform: rotate(198deg);
+}
+.flower .child:nth-child(5) .leaf {
+  background-color: #ebe8e8;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+.flower .child:nth-child(5) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-198deg);
+}
+.flower .glass {
+  height: 100%;
+  transition: transform 3.2s ease-in-out;
+}
+.flower:hover {
+  transform: scale(3.4);
+}
+.flower:hover .inner {
+  transform: scale(0.294117647058824);
+}
+.flower:hover .leaf {
+  visibility: visible;
+  transform: rotate(720deg) translateX(144px) rotate(2250deg);
+}
+.flower:hover .leaf:hover {
+  box-shadow: 0 0 34px #d3d9ff, 0 0 0 1px #000, inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.flower:hover .leaf .glass {
+  transform: rotate(-2970deg);
+}
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: #02102c;
+  background-size: cover;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+a {
+  outline: 0;
+}
+@-moz-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-o-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-moz-keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@-webkit-keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@-o-keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}

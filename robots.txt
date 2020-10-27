@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://Arkanic.github.io/sitemap.txt
