@@ -1,3 +1,4 @@
+os: osx
 language: bash
 dist: xenial
 script:
