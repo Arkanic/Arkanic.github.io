@@ -7,7 +7,6 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  target-branch: master 
   github-token: $github_token
   keep-history: true
   verbose: true
