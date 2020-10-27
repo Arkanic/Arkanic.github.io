@@ -1,4 +1,5 @@
 language: bash
+dist: xenial
 script:
   - chmod +x ./sitemap.sh
   - ./sitemap.sh
