@@ -12,6 +12,7 @@ https://arkanic.github.io/robots.txt
 https://arkanic.github.io/sitemap-temp.txt
 https://arkanic.github.io/sitemap.sh
 https://arkanic.github.io/sitemap.txt
+https://arkanic.github.io/sitemap.xml
 https://arkanic.github.io/src/css/card.css
 https://arkanic.github.io/src/css/global.css
 https://arkanic.github.io/src/css/radial.css
