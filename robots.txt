@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: http://Arkanic.github.io/sitemap.txt
+Sitemap: https://arkanic.github.io/sitemap.xml
