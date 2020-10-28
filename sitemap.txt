@@ -1,6 +1,7 @@
 https://arkanic.github.io/.gitignore
 https://arkanic.github.io/.travis.yml
 https://arkanic.github.io/about/
+https://arkanic.github.io/envs.sh
 https://arkanic.github.io/google20f120b1372947d9.html
 https://arkanic.github.io/
 https://arkanic.github.io/projects/crypto/cpuminer/
