@@ -1,6 +1,8 @@
 os: osx
 language: bash
 dist: xenial
+before_install:
+  - source envs.sh
 script:
   - chmod +x ./sitemap.sh
   - ./sitemap.sh
