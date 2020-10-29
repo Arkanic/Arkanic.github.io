@@ -19,6 +19,7 @@ https://arkanic.github.io/src/css/card.css
 https://arkanic.github.io/src/css/global.css
 https://arkanic.github.io/src/css/radial.css
 https://arkanic.github.io/src/css/text.css
+https://arkanic.github.io/src/img/background/stars.png
 https://arkanic.github.io/src/img/icons/about.svg
 https://arkanic.github.io/src/img/icons/contact.svg
 https://arkanic.github.io/src/img/icons/github.svg
