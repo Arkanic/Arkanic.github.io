@@ -9,7 +9,9 @@ https://arkanic.github.io/projects/crypto/cpuminer/
 https://arkanic.github.io/projects/crypto/cpuminer/script/install
 https://arkanic.github.io/projects/crypto/img/magi.png
 https://arkanic.github.io/projects/crypto/
-https://arkanic.github.io/projects/dredbot/img/dredbot.png
+https://arkanic.github.io/projects/drednot/img/drednot.png
+https://arkanic.github.io/projects/drednot/
+https://arkanic.github.io/projects/drednot/modding/drednot.zip
 https://arkanic.github.io/projects/exdroid/img/gameplay.png
 https://arkanic.github.io/projects/exdroid/
 https://arkanic.github.io/projects/
