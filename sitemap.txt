@@ -1,4 +1,3 @@
-https://arkanic.github.io/.github/workflows/build.yml
 https://arkanic.github.io/.gitignore
 https://arkanic.github.io/.travis.yml
 https://arkanic.github.io/about/
