@@ -34,3 +34,5 @@ https://arkanic.github.io/src/img/icons/github.svg
 https://arkanic.github.io/src/img/icons/openprocessing.svg
 https://arkanic.github.io/src/img/icons/projects.svg
 https://arkanic.github.io/src/img/profile/cat.jpg
+https://arkanic.github.io/src/js/lib/p5.min.js
+https://arkanic.github.io/src/js/p5/forest.js
