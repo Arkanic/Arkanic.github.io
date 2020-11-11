@@ -7,8 +7,10 @@ function setup() {
 	mxt = random(1, windowWidth);
 	myt = random(1, windowHeight)
 }
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
 function draw() {
-
     background(255);
 	textSize(s)
 	c += 2e-4//2e-4;
