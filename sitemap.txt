@@ -7,6 +7,9 @@ https://arkanic.github.io/google20f120b1372947d9.html
 https://arkanic.github.io/
 https://arkanic.github.io/projects/crypto/cpuminer/
 https://arkanic.github.io/projects/crypto/cpuminer/script/install
+https://arkanic.github.io/projects/crypto/cpuminer-opt/
+https://arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s1
+https://arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s2
 https://arkanic.github.io/projects/crypto/img/magi.png
 https://arkanic.github.io/projects/crypto/
 https://arkanic.github.io/projects/drednot/img/drednot.png
