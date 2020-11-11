@@ -8,7 +8,7 @@ function setup() {
 	myt = random(1, windowHeight)
 }
 function draw() {
-	
+	background(255);
 	textSize(s)
 	c += 2e-4//2e-4;
 	mxt+=1;
