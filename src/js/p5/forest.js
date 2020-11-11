@@ -4,6 +4,7 @@ let mx, my, mxt, myt;
 function setup() {
     let cnv = createCanvas(windowWidth,windowHeight);
     cnv.style("display", "block");
+    cnv.parent("main");
 	mxt = random(1, windowWidth);
 	myt = random(1, windowHeight)
 }
