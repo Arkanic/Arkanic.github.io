@@ -29,5 +29,6 @@ https://arkanic.github.io/src/img/background/stars.png
 https://arkanic.github.io/src/img/icons/about.svg
 https://arkanic.github.io/src/img/icons/contact.svg
 https://arkanic.github.io/src/img/icons/github.svg
+https://arkanic.github.io/src/img/icons/openprocessing.svg
 https://arkanic.github.io/src/img/icons/projects.svg
 https://arkanic.github.io/src/img/profile/cat.jpg
