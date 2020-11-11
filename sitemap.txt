@@ -12,6 +12,8 @@ https://arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s1
 https://arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s2
 https://arkanic.github.io/projects/crypto/img/magi.png
 https://arkanic.github.io/projects/crypto/
+https://arkanic.github.io/projects/crypto/miners/cpuminer-opt-master.zip
+https://arkanic.github.io/projects/crypto/miners/m-cpuminer-v2-master.zip
 https://arkanic.github.io/projects/drednot/img/drednot.png
 https://arkanic.github.io/projects/drednot/
 https://arkanic.github.io/projects/drednot/modding/drednot.zip
