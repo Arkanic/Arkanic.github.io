@@ -3,7 +3,7 @@ let s=17;
 let mx, my, mxt, myt;
 function setup() {
     let cnv = createCanvas(windowWidth,windowHeight);
-    cnv.parent("canvas-back");
+    cnv.style("display", "block");
 	mxt = random(1, windowWidth);
 	myt = random(1, windowHeight)
 }
