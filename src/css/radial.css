@@ -1,6 +1,11 @@
-canvas {
-    position: relative;
-    z-index: -3 !important;
+#canvas-back {
+	z-index: -1;  
+	mix-blend-mode: multiply;
+}
+#background {
+    z-index: -10;
+}
+#main {
 }
 .glass {
   background-image: radial-gradient(circle closest-side, rgba(38,38,38,0.2), rgba(0,0,0,0.63));
