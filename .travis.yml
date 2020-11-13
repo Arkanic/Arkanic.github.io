@@ -1,9 +1,6 @@
 os: osx
 dist: xenial
-matrix:
-  include:
-    - language: bash
-    - language: node_js
+language: nodejs
 before_install:
   - source envs.sh
 script:
