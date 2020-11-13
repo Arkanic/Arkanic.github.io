@@ -1,13 +1,14 @@
 os: osx
-language: bash
 dist: xenial
+matrix:
+  include:
+    - language: bash
+    - language: node_js
 before_install:
   - source envs.sh
 script:
   - chmod +x ./sitemap.sh
   - ./sitemap.sh
-  - chmod +x ./webtoys.sh
-  - ./webtoys.sh
 deploy:
   provider: pages
   skip-cleanup: true
