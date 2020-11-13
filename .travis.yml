@@ -6,6 +6,8 @@ before_install:
 script:
   - chmod +x ./sitemap.sh
   - ./sitemap.sh
+  - chmod +x ./webtoys.sh
+  - ./webtoys.sh
 deploy:
   provider: pages
   skip-cleanup: true
