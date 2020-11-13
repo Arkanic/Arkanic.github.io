@@ -1,12 +1,10 @@
 os: osx
 dist: xenial
-matrix:
-  include:
-    - language: bash
-    - language: node_js
+language: bash
 before_install:
   - source envs.sh
 script:
+  - sudo apt-get install nodejs
   - chmod +x ./sitemap.sh
   - ./sitemap.sh
 deploy:
