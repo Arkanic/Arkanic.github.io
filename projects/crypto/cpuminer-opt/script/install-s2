@@ -1,5 +1,3 @@
-ds64-shell
-
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install -y gcc g++ git wget libz-dev automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make
