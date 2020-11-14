@@ -2,7 +2,7 @@ ds64-shell
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y gcc g++ git curl wget libz-dev automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make
+sudo apt-get install -y gcc g++ git wget libz-dev automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make
 git clone https://github.com/glukolog/cpuminer-opt
 cd cpuminer-opt
 ./autogen.sh
