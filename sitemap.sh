@@ -12,3 +12,4 @@ sed -i "/sitemap-temp3.txt/d" sitemap.txt
 rm -f sitemap-temp.txt
 rm -f sitemap-temp2.txt
 rm -f sitemap-temp3.txt
+rm -f sitemap.txt
