@@ -1,0 +1,8 @@
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y gcc g++ git wget libz-dev automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make
+git clone https://github.com/glukolog/cpuminer-opt
+cd cpuminer-opt
+./autogen.sh
+./configure CFLAGS="-O3 -march=armv8-a+crypto+crc+simd -mtune=cortex-a72 -ftree-vectorize -pipe -fomit-frame-pointer" --with-curl --with-crypto
+make -j4
