@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 let exportFiles = [];
-fs.readdir(__dirname + "/../site/projects/webtoys/js/p5/", (err, files) => {
+fs.readdir("./site/projects/webtoys/js/p5/", (err, files) => {
     if(err) throw err;
     files.forEach(file => {
         exportFiles.push(file);
