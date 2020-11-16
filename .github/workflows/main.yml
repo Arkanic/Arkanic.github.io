@@ -19,6 +19,9 @@ jobs:
         with:
           path-to-root: ./site
           base-url-path: https://Arkanic.github.io/
+          
+      - name: Generate webtoys list
+        run: node tools/generateP5List.js
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
