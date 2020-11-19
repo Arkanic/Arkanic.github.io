@@ -1,0 +1,5 @@
+cd
+cd projects
+cd webtoys
+cd js
+node generateP5List.js
