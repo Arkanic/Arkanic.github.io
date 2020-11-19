@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: List current folder
-        run: pwd
-      
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.2
       
