@@ -22,11 +22,8 @@ jobs:
           
       - name: Generate webtoys list
         run: |
-          cd
-          cd projects
-          cd webtoys
-          cd js
-          node generateP5List.js
+          chmod a+x generateP5List
+          ./generateP5List
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
