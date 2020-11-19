@@ -22,6 +22,7 @@ jobs:
           
       - name: Generate webtoys list
         run: |
+          cd
           cd projects
           cd webtoys
           cd js
