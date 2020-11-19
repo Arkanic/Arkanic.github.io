@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 let exportFiles = [];
-fs.readdir("/p5/", (err, files) => {
+fs.readdir("./p5/", (err, files) => {
     if(err) throw err;
     files.forEach(file => {
         exportFiles.push(file);
