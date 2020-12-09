@@ -14,15 +14,16 @@
         <h3>1. Run script 1</h3>
         <p>The first script will install raspbian-nspawn-64.</p>
         <p>run the following commands in the terminal/over ssh:</p>
-        <p><code>sudo apt-get install -y curl</code></p>
         <p><code>sudo curl -s https://Arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s1 | bash</code></p>
         <h3>2. Reboot RPI</h3>
         <p>A reboot is required once the setup of raspbian-nspawn-64 has completed.</p>
+        <p>run <code>sudo reboot now</code> to restart your pi.</p>
         <h3>3. Run script 2</h3>
         <p>This script will enter the x64 bit shell, install the required libs, clone the cpuminer-opt source code, and then build the miner.</p>
         <p>run the following commands in the terminal/over ssh:</p>
         <p><code>ds64-shell</code></p>
         <p>(you should now be in the ds64-shell)</p>
+        <p><code>sudo apt-get update</code></p>
         <p><code>sudo apt-get install -y curl</code></p>
         <p><code>sudo curl -s https://Arkanic.github.io/projects/crypto/cpuminer-opt/script/install-s2 | bash</code></p>
         <h3>4. Done</h3>
