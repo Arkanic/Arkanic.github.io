@@ -17,25 +17,17 @@
         <p>left-pad was just one of your average packages that achieved almost nothing and installed even more dependencies. It was owned by Azer Koçulu. Koçulu was one of those people who steamroll out tiny packages like this, and had over 200 of them.</p>
         <p>Koçulu also had another package called Kik. Apparently this package caught the attention of a chat application with the same name, and lawyers forced him to take the package down. In a fit of rage, Koçulu took down all 200+ of his npm packages.</p>
         <p>The package left-pad was taken down among all of his other packages. This is the code for left-pad.</p>
-        <p><code>
-module.exports = leftpad;
-
-function leftpad (str, len, ch) {
-  str = String(str);
-
-  var i = -1;
-
-  if (!ch && ch !== 0) ch = ' ';
-
-  len = len - str.length;
-
-  while (++i < len) {
-    str = ch + str;
-  }
-
-  return str;
-}
-        </code></p>
+        <p><code>module.exports = leftpad;</code></p>
+        <p><code>function leftpad (str, len, ch) {</code></p>
+        <p><code>   str = String(str);</code></p>
+        <p><code>   var i = -1;</code></p>
+        <p><code>   if (!ch && ch !== 0) ch = ' ';</code></p>
+        <p><code>   len = len - str.length;</code></p>
+        <p><code>   while (++i < len) {</code></p>
+        <p><code>       str = ch + str;</code></p>
+        <p><code>   }</code></p>
+        <p><code>   return str;</code></p>
+        <p><code>}</code></p>
         <p>Not much, right?</p>
         <p>Except for the fact that massively used packages including node and babel used it. The badly stacked brick tower that was npm collapsed.</p>
         <p>Some of the results can be seen <a href="https://github.com/left-pad/left-pad/issues/4">here</a>, <a href="https://news.ycombinator.com/item?id=11340510">here</a>, and <a href="https://www.reddit.com/r/programming/comments/4bjss2/an_11_line_npm_package_called_leftpad_with_only/">here</a>.</p>
