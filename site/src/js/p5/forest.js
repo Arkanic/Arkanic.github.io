@@ -1,5 +1,5 @@
 let c=0;
-let s=17;
+let s=25;
 let mx, my, mxt, myt;
 function setup() {
     let cnv = createCanvas(windowWidth,windowHeight);
