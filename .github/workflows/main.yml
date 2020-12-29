@@ -22,7 +22,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          npm i -g dessi
+          sudo npm i -g dessi
       
       - name: Generate SSIs
         run: dessi --root=./site --target=./dist --source=./site
