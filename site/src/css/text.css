@@ -33,3 +33,19 @@ ul>h3 {
 	text-decoration: underline;
 	margin-bottom: 0;
 }
+
+div.header {
+    width: 100%;
+}
+h1.title {
+    font-size: 72pt;
+}
+span.links {
+    font-size: 10pt;
+    margin-top: 5px;
+}
+a.globallink {
+}
+div.footer {
+    width: 100%;
+}
