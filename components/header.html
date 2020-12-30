@@ -1,0 +1,14 @@
+<div class="header">
+    <span class="title">Arkanic</span><br>
+    <span class="links">
+        <a class="globallink">Projects</a> &bull;
+        <a class="globallink">About</a> &bull;
+        <a class="globallink">Contact</a>
+    </span>
+    <script>
+        let links = document.getElementsByClassName("globallink");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${links[i].textContent}`;
+        }
+    </script>
+</div>

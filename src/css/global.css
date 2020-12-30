@@ -1,3 +1,15 @@
 body {
     font-family: sans-serif;
 }
+div.header {
+    width: 100%;
+}
+span.title {
+    font-size: 24pt;
+}
+span.links {
+    font-size: 10pt;
+    margin-top: 5px;
+}
+a.globallink {
+}
