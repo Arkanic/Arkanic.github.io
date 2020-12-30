@@ -1,15 +1,37 @@
 <!doctype html>
 <html>
   <head>
-    <title>Cpuminer install script</title>
-    <link type="text/css" href="../../../src/css/text.css" rel="stylesheet"/>
-  </head>
+    <link type="text/css" href="../src/css/text.css" rel="stylesheet"/>
+  
+<title>Cpuminer install script</title>
+</head>
   <body>
-    <h1>Cpuminer install script</h1>
-    <p>Specifically made for installing on RPI 2, 3, and 4 models</p>
-    <h2>Usage</h2>
-    <p>either use the below script, or download the script yourself from <a href="./script/install">this link</a>.</p>
-    <h3>Curl install command</h3>
-    <code>sudo curl -s https://Arkanic.github.io/projects/crypto/cpuminer/script/install | bash</code>
+    <div class="header">
+    <h1 class="arkanic">Arkanic</h1><br>
+    <span class="links">
+        <a href="https://arkanic.github.io/">Home</a> &bull;
+        <a class="globallink">Projects</a> &bull;
+        <a class="globallink">About</a> &bull;
+        <a class="globallink">Contact</a>
+    </span>
+    <hr>
+    <script>
+        let links = document.getElementsByClassName("globallink");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+        }
+    </script>
+</div>
+
+<h1>Cpuminer install script</h1>
+<p>Specifically made for installing on RPI 2, 3, and 4 models</p>
+<h2>Usage</h2>
+<p>either use the below script, or download the script yourself from <a href="./script/install">this link</a>.</p>
+<h3>Curl install command</h3>
+<code>sudo curl -s https://Arkanic.github.io/projects/crypto/cpuminer/script/install | bash</code>
+    <div class="footer">
+    <hr>
+    <a href="https://arkanic.github.io/">Home</a>
+</div>
   </body>
 </html>

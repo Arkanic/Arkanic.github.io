@@ -1,15 +1,37 @@
 <!doctype html>
 <html>
   <head>
-    <title>Drednot.io stuff</title>
-    <link type="text/css" href="../../src/css/text.css" rel="stylesheet"/>
-  </head>
+    <link type="text/css" href="../src/css/text.css" rel="stylesheet"/>
+  
+<title>Drednot.io stuff</title>
+</head>
   <body>
-    <h1>Drednot.io stuff</h1>
-    <p>A collection of drednot-related things</p>
-    <ul>
-      <li><b>Dredbot (Drednot.io Discord Bot):</b> <a target="_blank" href="https://dredbot--tal0s.repl.co/">Website</a></li>
-      <li><b>Old 2d Drednot.io Sprites (note: turret sprites are missing):</b> <a target="_blank" href="./modding/drednot.zip">Zip File (Mod-Ready)</a></li>
-    </ul>
+    <div class="header">
+    <h1 class="arkanic">Arkanic</h1><br>
+    <span class="links">
+        <a href="https://arkanic.github.io/">Home</a> &bull;
+        <a class="globallink">Projects</a> &bull;
+        <a class="globallink">About</a> &bull;
+        <a class="globallink">Contact</a>
+    </span>
+    <hr>
+    <script>
+        let links = document.getElementsByClassName("globallink");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+        }
+    </script>
+</div>
+
+<h1>Drednot.io stuff</h1>
+<p>A collection of drednot-related things</p>
+<ul>
+    <li><b>Dredbot (Drednot.io Discord Bot):</b> <a target="_blank" href="https://dredbot--tal0s.repl.co/">Website</a></li>
+    <li><b>Old 2d Drednot.io Sprites (note: turret sprites are missing):</b> <a target="_blank" href="./modding/drednot.zip">Zip File (Mod-Ready)</a></li>
+</ul>
+    <div class="footer">
+    <hr>
+    <a href="https://arkanic.github.io/">Home</a>
+</div>
   </body>
 </html>
