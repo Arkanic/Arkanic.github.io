@@ -5,7 +5,21 @@
     <link type="text/css" href="../../src/css/text.css" rel="stylesheet"/>
   </head>
   <body>
-    <!--#include virtual="components/header.html"-->
+    <div class="header">
+    <span class="title">Arkanic</span><br>
+    <span class="links">
+        <a class="globallink">Projects</a> &bull;
+        <a class="globallink">About</a> &bull;
+        <a class="globallink">Contact</a>
+    </span>
+    <script>
+        let links = document.getElementsByClassName("globallink");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${links[i].textContent}`;
+        }
+    </script>
+</div>
+
     <h1>Cryptocurrency stuff</h1>
     <p>A collection of things I have made during my tampering with crypto (mainly Magicoin)</p>
     <ul>
