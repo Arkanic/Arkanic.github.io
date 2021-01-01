@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link type="text/css" href="https://arkanic.github.io/src/css/text.css" rel="stylesheet"/>
+<title>Filecan</title>
+</head>
+  <body>
+    <div class="header">
+    <h1 class="arkanic">Arkanic</h1><br>
+    <span class="links">
+        <a href="https://arkanic.github.io/">Home</a> &bull;
+        <a class="globallink">Projects</a> &bull;
+        <a class="globallink">About</a> &bull;
+        <a class="globallink">Contact</a>
+    </span>
+    <hr>
+    <script>
+        let links = document.getElementsByClassName("globallink");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+        }
+    </script>
+</div>
+
+<h1>Filecan</h1>
+<p>A node.js file uploader</p>
+<h2>Features:</h2>
+<li>
+    <ul>Multiple file uploads</ul>
+    <ul>Optional password required to upload files</ul>
+    <ul>Customizable filenames</ul>
+    <ul>No html page for the files - redirects directly to the raw file</ul>
+    <ul>Good for sending files to discord, allows a way to go past the 8mb file limit</ul>
+    <ul>wget and cURL compatible</ul>
+</li>
+<h3>Example</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZsCJE-8gcCw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>Installation</h2>
+<p>visit the <a href="https://github.com/Arkanic/filecan" target="_blank">Github repo</a> and follow the instructions from the README.</p>
+    <div class="footer">
+    <hr>
+    <a href="https://arkanic.github.io/">Home</a>
+</div>
+  </body>
+</html>
