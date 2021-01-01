@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: google20f120b1372947d9.html
 Sitemap: https://arkanic.github.io/sitemap.xml
