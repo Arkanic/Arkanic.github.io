@@ -48,7 +48,7 @@ div.footer {
     width: 100%;
 }
 
-#HCB_comment_box {
+.comment-super {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 2px;
     border-radius: 5px;
