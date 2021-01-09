@@ -53,3 +53,13 @@ div.footer {
     padding: 2px;
     border-radius: 5px;
 }
+
+.btn {
+    display: inline-block;
+    background: #AAA;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+    padding: 8px 12px;
+    cursor: pointer;   
+}
