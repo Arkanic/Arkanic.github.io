@@ -33,7 +33,6 @@
 <meta name="twitter:image:alt" content="Arkanic">
         <link type="text/css" href="https://arkanic.github.io/src/css/text.css" rel="stylesheet"/>
 <title>Contact</title>
-<script src="../src/js/lib/captcha.js"></script>
 </head>
   <body>
     <div class="header">
@@ -54,40 +53,12 @@
 </div>
 
 <h1>Contact</h1>
-<p>Email: <a id="email"></a>(fill in captcha, then click)</a></p>
-<input class="jCaptcha" type="text" placeholder="Type in the result here">
-<script>
-    let Captcha = new jCaptcha({
-        el: '.jCaptcha',
-        canvasClass: 'jCaptchaCanvas',
-        canvasStyle: {
-            width: 100,
-            height: 15,
-            textBaseline: 'top',
-            font: '15px Arial',
-            textAlign: 'left',
-            fillStyle: '#ddd'
-        },
-        callback: ( response, $captchaInputElement, numberOfTries ) => {
-            if ( response == 'success' ) {
-                let one = "silverfish";
-                let two = "asaurus";
-                let three = "@";
-                let four = "gm";
-                let five = "ail.c";
-                let six = "om"
-                let box = document.getElementById("email");
-                box.href = "mailto:" + one + two + three + four + five + six;
-            }
-            if ( response == 'error' ) {
-
-                if (numberOfTries === 3) {
-                    console.log("probable bot");
-                }
-            }
-        }
-    });
-</script>
+<p>Email: 
+<a href="ma@@ilt@@o:si@@lver@@fis@@has@@aur@@us@gm@@a@@il.@@@@co@@m"
+   onmouseover="this.href=this.href.replace('@@','.')">
+   Send email
+</a>
+</p>
     <hr>
     <div class="comment-super">
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
