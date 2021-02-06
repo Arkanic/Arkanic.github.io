@@ -35,23 +35,24 @@
 <title>Drednot.io stuff</title>
 </head>
   <body>
+    <div class="container-page">
     <div class="header">
-    <h1 class="arkanic">Arkanic</h1><br>
-    <span class="links">
-        <a href="https://arkanic.github.io/">Home</a> &bull;
-        <a class="globallink">Projects</a> &bull;
-        <a class="globallink">About</a> &bull;
-        <a class="globallink">Contact</a>
-    </span>
-    <hr>
-    <script>
-        let links = document.getElementsByClassName("globallink");
-        for(let i in links) {
-            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
-        }
-    </script>
+        <h1 class="arkanic">Arkanic</h1><br>
+        <span class="links">
+            <a href="https://arkanic.github.io/">Home</a> &bull;
+            <a class="globallink">Projects</a> &bull;
+            <a class="globallink">About</a> &bull;
+            <a class="globallink">Contact</a>
+        </span>
+        <hr>
+        <script>
+            let links = document.getElementsByClassName("globallink");
+            for(let i in links) {
+                links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+            }
+        </script>
+    </div>
 </div>
-
     <div class="container-page">
 <h1>Drednot.io stuff</h1>
 <p>A collection of drednot-related things</p>
