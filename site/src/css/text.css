@@ -3,12 +3,11 @@ html {
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.9);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 100px;
   border-radius: 10px;
-	font-family: sans-serif;
+    font-family: sans-serif;
   height: 100%;
 }
 h1, h2 {
@@ -46,6 +45,11 @@ span.links {
 }
 div.footer {
     width: 100%;
+}
+.container-page {
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .comment-super {
