@@ -1,5 +1,6 @@
 html {
   background-image: url("../img/background/stars.png");
+  background-attachment: fixed;
 }
 
 body {
