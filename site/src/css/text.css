@@ -46,6 +46,8 @@ span.links {
 }
 div.footer {
     width: 100%;
+    clear:both;
+    margin-bottom: 0;
 }
 
 section {
