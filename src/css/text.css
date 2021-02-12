@@ -1,70 +1,105 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 html {
-  background-image: url("../img/background/stars.png");
-  background-attachment: fixed;
+    box-sizing: border-box;
+    background-image: url("../img/background/stars.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
-
 body {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 100px;
-  border-radius: 10px;
     font-family: sans-serif;
-  height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
+    padding: 8px 24px 24px 24px;
 }
-h1, h2 {
-	margin: 0;
-  padding-top: 20px;
-}
-h1 {
-	font-size: 18pt;
-}
-h2 {
-	font-size: 16pt;
-}
-h3 {
-	font-size: 14pt;
-}
-h4 {
-	font-size: 12pt;
-}
-
-ul>h3 {
-	font-size: 12pt;
-	text-decoration: underline;
-	margin-bottom: 0;
-}
-
+/* header */
 div.header {
+    background-color: white;
+}
+div.header p {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+div.header h1 {
+    font-size: 16px;
+    text-align: right;
+}
+/* breadcrumb menu */
+div.nav ul {
+    list-style-type: none;
+    padding: 16px;
+}
+div.nav ul li {
+    display: inline;
+    border-right: 1px solid #555;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+div.nav ul li:last-child {
+    border-right: none;
+}
+div.nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+div.nav ul li a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+/* section */
+div.section {
+    background-color: white;
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+/* aside */
+div.aside {
+    background-color: white;
+}
+/* footer */
+div.footer {
+    background-color: white;
+}
+div.footer p.contact {
+    text-align: right;
+}
+img.small {
+    float: left;
+    height: 200px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+img.medium {
+    max-width: 360px;
+    width: 50%;
+}
+img.large {
     width: 100%;
 }
-h1.title {
-    font-size: 72pt;
-}
-span.links {
-    font-size: 10pt;
-    margin-top: 5px;
+
+@media all and (min-width: 900px) {
+    div.article {
+        float: left;
+        width: 66%;
+    }
+    div.aside {
+        float: left;
+        padding-left: 24px;
+        width: 34%;
+    }
+    div.footer {
+        clear: both;
+    }
 }
 
-section {
-    float: left;
-    width: 60%;
-}
-
-aside {
-    float: right;
-    width: 20%;
-}
-
-.container-page {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 2%;
-}
-
-.comment-super {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2px;
-    border-radius: 5px;
-}
 
 .btn {
     display: inline-block;

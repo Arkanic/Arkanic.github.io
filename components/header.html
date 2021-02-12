@@ -1,19 +1,30 @@
-<p></p>
-<div class="container-page">
-    <div class="header">
-        <h1 class="arkanic">Arkanic</h1><br>
-        <span class="links">
-            <a href="https://arkanic.github.io/">Home</a> &bull;
-            <a class="globallink">Projects</a> &bull;
-            <a class="globallink">About</a> &bull;
-            <a class="globallink">Contact</a>
-        </span>
-        <p></p>
-        <script>
-            let links = document.getElementsByClassName("globallink");
-            for(let i in links) {
-                links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
-            }
-        </script>
+<div class="header">
+    <p>
+        <img src="https://arkanic.github.io/img/profile/arkanic.png"/>
+         Arkanic
+    </p>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="https://arkanic.github.io/">Home</a>
+            </li>
+            <li>
+                <a class="global-link">Projects</a>
+            </li>
+            <li>
+                <a class="global-link">About</a> 
+            </li>
+            <li>
+                <a class="global-link">Contact</a>
+            </li>
+        </ul>
     </div>
+
+    <!-- generate the links for every element with the class "global-link"-->
+    <script>
+        let links = document.getElementsByClassName("global-link");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+        }
+    </script>
 </div>

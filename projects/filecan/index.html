@@ -35,28 +35,38 @@
 <title>Filecan</title>
 </head>
   <body>
-    <p></p>
-<div class="container-page">
     <div class="header">
-        <h1 class="arkanic">Arkanic</h1><br>
-        <span class="links">
-            <a href="https://arkanic.github.io/">Home</a> &bull;
-            <a class="globallink">Projects</a> &bull;
-            <a class="globallink">About</a> &bull;
-            <a class="globallink">Contact</a>
-        </span>
-        <p></p>
-        <script>
-            let links = document.getElementsByClassName("globallink");
-            for(let i in links) {
-                links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
-            }
-        </script>
+    <p>
+        <img src="https://arkanic.github.io/img/profile/arkanic.png"/>
+         Arkanic
+    </p>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="https://arkanic.github.io/">Home</a>
+            </li>
+            <li>
+                <a class="global-link">Projects</a>
+            </li>
+            <li>
+                <a class="global-link">About</a> 
+            </li>
+            <li>
+                <a class="global-link">Contact</a>
+            </li>
+        </ul>
     </div>
+
+    <!-- generate the links for every element with the class "global-link"-->
+    <script>
+        let links = document.getElementsByClassName("global-link");
+        for(let i in links) {
+            links[i].href = `${window.location.protocol}//${window.location.hostname}/${(links[i].textContent).toLowerCase()}`;
+        }
+    </script>
 </div>
-    <p></p>
-    <section>
-        <div class="container-page">
+    <div class="article">
+        <div class="section">
 <h1>Filecan</h1>
 <p>A node.js file uploader</p>
 <h2>Features:</h2>
@@ -73,35 +83,32 @@
 
 <h2>Installation</h2>
 <p>visit the <a href="https://github.com/Arkanic/filecan" target="_blank">Github repo</a> and follow the instructions from the README.</p>
-
         </div>
-    </section>
-    <p></p>
-    <section>
-        <div class="container-page">
-            <div class="comment-super">
-                <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+        <div class="section">
+            <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
                 <script type="text/javascript" id="hcb">
-                if (!window.hcb_user) {
-                    hcb_user = {};
-                }
-                hcb_user.PAGE = window.location.href;
-                (function() {
-                    var s = document.createElement("script"),
-                        l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
-                        h = "https://www.htmlcommentbox.com";
-                    s.setAttribute("type", "text/javascript");
-                    s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24hYXOD7sViS4%2FIw1JIJKaH." + "&opts=17366&num=20&ts=1610143640892");
-                    if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
-                })();
+                    if (!window.hcb_user) {
+                        hcb_user = {};
+                    }
+                    hcb_user.PAGE = window.location.href;
+                    (function() {
+                        var s = document.createElement("script"),
+                            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+                            h = "https://www.htmlcommentbox.com";
+                        s.setAttribute("type", "text/javascript");
+                        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24hYXOD7sViS4%2FIw1JIJKaH." + "&opts=17366&num=20&ts=1610143640892");
+                        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+                    })();
                 </script>
             </div>
         </div>
-    </section>
-    <aside>
-        <div class="container-page">
-            <h1>Test</h1>
+        <div class="aside">
+            <div class="aside">
+    <p>Hello there</p>
+</div>
         </div>
-    </aside>
-  </body>
+        <div class="footer">
+            <p class="contact">Contact: silver[removethisbit]fishasaurus(at)gmail{dot}com</p>
+        </div>
+    </body>
 </html>
