@@ -9,6 +9,6 @@ echo "<!DOCTYPE html><html><head><title>Notes Index</title></head><body><ul>" > 
 for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -type d| sort`; do
   path=`basename "$filepath"`
   formattedpath="${path//-/ }"
-  echo "  <li><a href=\"/$path/\">$formattedpath</a></li>" >> $OUTPUT
+  echo "  <li><a href=\"./$path/\">$formattedpath</a></li>" >> $OUTPUT
 done
 echo "</ul></body></html>" >> $OUTPUT
