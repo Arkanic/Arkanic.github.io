@@ -59,7 +59,28 @@
 </header>
         <article>
             <section>
-<p>test</p>
+<h1>Generating a HTML folder index</h1>
+<p>I'm trying out this new system that I made for hosting simple notes/observances/whatever that other people might be interested in on this site.</p>
+<p>I modified a shell script for this purpose, and here it is:</p>
+<code>
+#!/bin/bash
+
+ROOT=./site/notes/
+HTTP=&quot;/&quot;
+OUTPUT=&quot;./site/notes/index.html&quot; 
+
+i=0
+echo &quot;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Notes Index&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;ul&gt;&quot; &gt; $OUTPUT
+for filepath in `find &quot;$ROOT&quot; -maxdepth 1 -mindepth 1 -type d| sort`; do
+  path=`basename &quot;$filepath&quot;`
+  formattedpath=&quot;${path//-/ }&quot;
+  echo &quot;  &lt;li&gt;&lt;a href=\&quot;./$path/\&quot;&gt;$formattedpath&lt;/a&gt;&lt;/li&gt;&quot; &gt;&gt; $OUTPUT
+done
+echo &quot;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;&quot; &gt;&gt; $OUTPUT
+</code>
+<h2>Variables within the script:</h2>
+<p>ROOT is the path to the folder you want indexed.</p>
+<p>OUTPUT is the resultant folder.</p>
             </section>
             <section>
                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
