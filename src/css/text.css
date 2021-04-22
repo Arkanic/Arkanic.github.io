@@ -55,7 +55,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
+article section {
     margin-bottom: 24px;
     min-height: 320px;
     padding: 0 24px 0 24px;
