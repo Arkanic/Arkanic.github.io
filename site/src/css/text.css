@@ -19,6 +19,7 @@ header {
     text-align: center;
     padding-bottom: 32px;
     border-bottom: 1px solid #444;
+    background-color: #CCC;
 }
 
 header p {
@@ -61,8 +62,14 @@ section {
     border-bottom: 1px solid #444;
 }
 
+aside {
+    border: 1px solid #444;
+    border-radius: 3px;
+}
+
 footer {
     border-top: 1px solid #444;
+    background-color: #CCC;
 }
 
 footer p {
