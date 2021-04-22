@@ -60,9 +60,13 @@ section {
     padding: 0 24px 0 24px;
 }
 
+footer {
+    border-top: 1px solid #444;
+}
+
 footer p {
     float: left;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 img.small {
