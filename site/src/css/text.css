@@ -3,13 +3,9 @@
 }
 html {
     box-sizing: border-box;
-    background-image: url("https://arkanic.github.io/src/img/background/stars.png");
-    background-attachment: fixed;
-    background-repeat: repeat;
 }
 body {
     font-family: sans-serif;
-    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
     max-width: 1024px;
@@ -17,9 +13,6 @@ body {
     padding: 8px 24px 24px 24px;
 }
 /* header */
-div.header {
-    background-color: white;
-}
 div.header p {
     float: left;
     font-size: 16px;
@@ -54,20 +47,12 @@ div.nav ul li a:hover {
 }
 /* section */
 div.section {
-    background-color: white;
     margin-bottom: 24px;
     min-height: 320px;
     padding-left: 24px;
     padding-right: 24px;
 }
-/* aside */
-div.aside {
-    background-color: white;
-}
 /* footer */
-div.footer {
-    background-color: white;
-}
 div.footer p.contact {
     text-align: right;
 }
@@ -89,11 +74,6 @@ img.large {
     div.article {
         float: left;
         width: 66%;
-    }
-    div.aside {
-        float: left;
-        padding-left: 24px;
-        width: 34%;
     }
     div.footer {
         clear: both;
