@@ -12,7 +12,7 @@ body {
     margin-right: auto;
     max-width: 1024px;
     min-width: 256px;
-    padding: 8px 24px 24px 24px;
+    padding: 0px 24px 24px 24px;
 }
 
 header {
@@ -39,7 +39,7 @@ nav ul {
 nav ul li {
     display: inline;
     border-right: 2px solid #444;
-    padding: 0 8px 0 8px;
+    padding: 0 8px 0 16px;
 }
 
 nav ul li:last-child {
