@@ -111,6 +111,27 @@ code {
     padding: 2px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid #CCC;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table th {
+    padding: 12px 0 12px 0;
+    text-align: left;
+    background-color: #777;
+    color: white;
+}
+
 @media all and (min-width: 900px) {
     article {
         float: left;

@@ -1,0 +1,193 @@
+<!--#include virtual="components/top.html"-->
+<title>TLE dataset format</title>
+<!--#include virtual="components/top2.html"-->
+<h1>TLE dataset format</h1>
+<p>this mainly serves as a reference for the TLE format.</p>
+<p>the TLE (Two Line Element set) is a format for storing a list of orbital values/elements of an earth-orbiting satellite at a given point of time.</p>
+<p>Using various formula, the position of the satellite in the future at any given point in time can be calculated, with increasing inaccuracy as the time increases.</p>
+<p>the NORAD satellite catalog radar data is <a href="https://celestrak.com"></a>publicly available in this format</a>, and is updated regularly.</p>
+<h2>the format</h2>
+<code>
+ISS (ZARYA)             
+1 25544U 98067A   21113.78844707  .00002123  00000-0  46788-4 0  9998
+2 25544  51.6441 251.7915 0002594 268.5930 236.1150 15.48926279280164
+</code>
+<p>this is an example data format.</p>
+<h3>Line 0</h3>
+<code>
+ISS (ZARYA)
+</code>
+<p>this line contains the name of the satellite in question.</p>
+
+<h3>Line 1</h3>
+<code>
+1 25544U 98067A   21113.78844707  .00002123  00000-0  46788-4 0  9998
+</code>
+<table>
+    <tr>
+        <th>No.</th>
+        <th>From-To</th>
+        <th>Value</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1-1</td>
+        <td>Line Number</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>3-7</td>
+        <td>Catalog Number</td>
+        <td>25544</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>8-8</td>
+        <td>Category (U=Unclassified, C=Classified, S=Secret)</td>
+        <td>U</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>10-11</td>
+        <td>Last two digits of launch year</td>
+        <td>98</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>12-14</td>
+        <td>Launch number of tde year</td>
+        <td>067</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>15-17</td>
+        <td>Peice of tde launch</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>19-20</td>
+        <td>Last two digits of measurement year</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>21-32</td>
+        <td>Day and fractional portion of measurement day</td>
+        <td>113.78844707</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>34-43</td>
+        <td>First derivative of mean motion/Ballistic Coefficient</td>
+        <td>.00002123</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>45-52</td>
+        <td>Second derivative of mean motion (usually 0)</td>
+        <td>00000-0</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>54-61</td>
+        <td>Radiation Pressure Coefficient</td>
+        <td>46788-4</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>63-63</td>
+        <td>Ephermeris type (internal, always 0 on public data)</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>65-68</td>
+        <td>Element set number. Increased when new element for tdis object is generated</td>
+        <td>999</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>69-69</td>
+        <td>Checksum (modulo 10)</td>
+        <td>8</td>
+    </tr>
+</table>
+
+<h3>Line 2</h3>
+<code>
+2 25544  51.6441 251.7915 0002594 268.5930 236.1150 15.48926279280164
+</code>
+<table>
+    <tr>
+        <th>No.</th>
+        <th>From-To</th>
+        <th>Value</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1-1</td>
+        <td>Line Number</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>3-7</td>
+        <td>Catalog Number</td>
+        <td>25544</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>9-16</td>
+        <td>Inclination (degrees)</td>
+        <td>51.6441</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>18-25</td>
+        <td>Right ascension of the ascending node (degrees)</td>
+        <td>251.7915</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>27-33</td>
+        <td>Eccentricity (decimal point assumed)</td>
+        <td>0002594</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>35-42</td>
+        <td>Argument of perigee (degrees)</td>
+        <td>268.5930</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>44-51</td>
+        <td>Mean Anomaly (degrees)</td>
+        <td>236.1150</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>53-63</td>
+        <td>Mean Motion (revolutions per day)</td>
+        <td>15.48926279</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>64-68</td>
+        <td>Revolution count at epoch (revolutions)</td>
+        <td>28016</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>69-69</td>
+        <td>Checksum (modulo 10)</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<h2>Thoughts</h2>
+<p>Although some decent math is required for predictions, you can glean some useful information from the TLE sets without doing any math, like the age of the satellite, the classification, the speed of the satellite, and how many revolutions it has done.</p>
+<!--#include virtual="components/bottom.html"-->
