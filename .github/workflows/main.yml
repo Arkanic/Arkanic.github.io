@@ -17,7 +17,7 @@ jobs:
           path-to-root: ./site
           base-url-path: https://Arkanic.github.io/
       
-      - name: Generate Notes Index
+      - name: Generate Projects Index
         run: |
           chmod a+x ./genIndex.sh
           ./genIndex.sh
