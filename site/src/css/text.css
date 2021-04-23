@@ -66,6 +66,10 @@ section:last-child {
     border: none;
 }
 
+aside {
+    border-left: 1px solid #CCC;
+}
+
 aside section {
     margin-bottom: 24px;
     min-height: 320px;
