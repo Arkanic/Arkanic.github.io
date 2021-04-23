@@ -32,6 +32,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:alt" content="Arkanic">
         <link type="text/css" href="https://arkanic.github.io/src/css/text.css" rel="stylesheet"/>
+        <link type="text/css" href="https://arkanic.github.io/src/css/searchbar.css" rel="stylesheet"/>
 <title>Filecan</title>
     </head>
     <body>
@@ -94,7 +95,12 @@
         </article>
         <aside>
             <section>
-    <p>Aside</p>
+    <input type="text" id="searchbar-input" class="searchbar-input" autocomplete="off" placeholder="Search"/>
+<p id="searchbar-loading" class="searchbar-loading">Loading...</p>
+<ul id="searchbar-results" class="searchbar-results"></ul>
+<script>
+const indexUrl="https://arkanic.github.io/projects/index.json";let xhr=new XMLHttpRequest;function searchBar(e){let t=document.getElementById("searchbar-input"),r=document.getElementById("searchbar-results");document.getElementById("searchbar-loading").remove(),t.addEventListener("keyup",n=>{let a=t.value.toLowerCase();if(r.innerHTML="",""!=a)for(let t in e.files){let n=e.files[t];if(n.name.toLowerCase().indexOf(a)>-1){let e=document.createElement("li"),t=document.createElement("a");t.href="https://arkanic.github.io/projects/"+n.location,t.innerHTML=n.name,e.appendChild(t),r.appendChild(e)}}})}xhr.open("GET",indexUrl),xhr.onreadystatechange=(()=>{if(4==xhr.readyState){if(200!=xhr.status)throw new Error(`index link returned ${xhr.status}`);searchBar(JSON.parse(xhr.responseText))}}),xhr.send();
+</script>
 </section>
         </aside>
         <footer>

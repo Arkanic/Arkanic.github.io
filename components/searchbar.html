@@ -1,2 +1,6 @@
-<input type="text" id="search-input" placeholder="Search"/>
-<ul id="search-list"></ul>
+<input type="text" id="searchbar-input" class="searchbar-input" autocomplete="off" placeholder="Search"/>
+<p id="searchbar-loading" class="searchbar-loading">Loading...</p>
+<ul id="searchbar-results" class="searchbar-results"></ul>
+<script>
+const indexUrl="https://arkanic.github.io/projects/index.json";let xhr=new XMLHttpRequest;function searchBar(e){let t=document.getElementById("searchbar-input"),r=document.getElementById("searchbar-results");document.getElementById("searchbar-loading").remove(),t.addEventListener("keyup",n=>{let a=t.value.toLowerCase();if(r.innerHTML="",""!=a)for(let t in e.files){let n=e.files[t];if(n.name.toLowerCase().indexOf(a)>-1){let e=document.createElement("li"),t=document.createElement("a");t.href="https://arkanic.github.io/projects/"+n.location,t.innerHTML=n.name,e.appendChild(t),r.appendChild(e)}}})}xhr.open("GET",indexUrl),xhr.onreadystatechange=(()=>{if(4==xhr.readyState){if(200!=xhr.status)throw new Error(`index link returned ${xhr.status}`);searchBar(JSON.parse(xhr.responseText))}}),xhr.send();
+</script>
