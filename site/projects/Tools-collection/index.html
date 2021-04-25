@@ -2,10 +2,73 @@
 <title>Tools Collection</title>
 <!--#include virtual="components/top2.html"-->
 <h1>Tools Collection</h1>
-<h2 id="cic-output"></h2>
+<p>Collection of different tools. Can accept values via links. Mainly used within this website.</p>
+<ul id="menu"></ul>
+<script>// menu
+let menu = document.getElementById("menu");
+let h2Tags = document.getElementsByTagName("h2");
+
+for(let i in h2Tags) {
+    let h2 = h2Tags[i];
+    if(h2.id) {
+        let liElement = document.createElement("li");
+        let aElement = document.createELement("a");
+        a.href = `#${h2.id}`;
+        a.innerHTML = h2.innerHTML;
+        liElement.appendChild(aElement);
+        
+        menu.appendChild(liElement);
+    }
+}
+</script>
+<script>// url params
+let UrlParams, UrlHash, UrlInput = false;
+if(window.location.hash) {
+    UrlParams = new URLSearchParams(window.location.search);
+    UrlHash = (window.location.hash).substring(1);
+    UrlInput = true;
+}
+</script>
+
+<hr></hr>
+<h2 id="cic">Compound Interest Calculator</h2>
+<h3 id="cic-output"></h3>
 <input type="number" id="cic-amount" placeholder="Initial Amount"/>
 <input type="number" id="cic-percent" placeholder="Percentage increase"/>
 <input type="number" id="cic-repeat" placeholder="Repeats x times"/>
 <input type="button" id="cic-submit" value="Submit"/>
-<script src="./js/cic.js"></script>
+<script>
+let cicOutput = document.getElementById("cic-output");
+let cicAmount = document.getElementById("cic-amount");
+let cicPercent = document.getElementById("cic-percent");
+let cicRepeat = document.getElementById("cic-repeat");
+let cicSubmit = document.getElementById("cic-submit");
+
+function cicCalculate(amount, percent, repeats) {
+    let multBy = 1.00 + (percent/100);
+
+    for(let i = 0; i < repeats; i++) {
+        amount *= multBy;
+    }
+
+    cicOutput.innerHTML = `Compound Interest: ${amount}`;
+}
+
+if(UrlInput && UrlHash == "cic") {
+    let amount = parseInt(UrlParams.get("amount"));
+    let percent = parseInt(UrlParams.get("percent"));
+    let repeats = parseInt(UrlParams.get("repeats"));
+
+    cicCalculate(amount, percent, repeats);
+}
+
+cicSubmit.addEventListener("click", (e) => {
+    let amount = parseInt(cicAmount.value);
+    let percent = parseInt(cicPercent.value);
+    let repeats = parseInt(cicRepeat.value);
+    let multBy = 1.00 + (percent/100);
+
+    cicCalculate(amount, percent, repeats);
+});
+</script>
 <!--#include virtual="components/bottom.html"-->
