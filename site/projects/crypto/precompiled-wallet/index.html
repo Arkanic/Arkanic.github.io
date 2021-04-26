@@ -1,0 +1,33 @@
+<!--#include virtual="components/top.html"-->
+<title>Precompiled Magi Wallets</title>
+<!--#include virtual="components/top2.html"-->
+<h1>Precompiled Magi Wallets</h1>
+<p>Here are the compiled versions of <var>m-wallet</var> and <var>magid</var> for aarch64.</p>
+
+<h2>Links</h2>
+<p><a href="./m-wallet">m-wallet</a></p>
+<p><a href="./magid">magid</a></p>
+<p>m-wallet is the GUI version of the wallet, and magid is the console-based one.</p>
+<p>If you would prefer to use git, a repository with the files is available at <a href="https://github.com/Arkanic/m-wallet-compiled-aarch64">https://github.com/Arkanic/m-wallet-compiled-aarch64</a></p>
+<p>The wallet is a modified version of the most recent version as of 26/apr/2021 which was built by <a href="https://github.com/Ruckard">Ruckard</a> to support aarch64.</p>
+
+<h2>Setup</h2>
+<p>These binaries are only executable if the archetecture of your system is <var>aarch64</var>.</p>
+<p>To check what arch you are using, run the following command:</p>
+<code>uname -m</code>
+
+<h3>If uname says armv7l and you are using raspbian</h3>
+<p>If the command gives you the result "armv7l", and you are using the raspbian operating system (e.g. Raspberry Pi 4), you will need to turn on 64 bit mode for your pi.</p>
+<p>To do so, run the following command:</p>
+<code>sudo nano /boot/config.txt</code>
+<p>(you can use any editing tool of your choice, if you wish).</p>
+<p>Now that you are editing the file, append this section of text to the bottom of the file:</p>
+<code>arm_64bit=1</code>
+<p>Save the file, and then reboot your machine by running the following command:</p>
+<code>sudo reboot now</code>
+<p>Now when you run <var>uname -m</var> again, you should see the following results:</p>
+<img class="small" src="./uname.png"/>
+
+<h2>Running</h2>
+<p>simply run <var>./m-wallet</var> or <var>./magid</var> in the folder that the files are stored at. If you get a permission denied error, run <var>chmod a+x [filename]</var></p>
+<!--#include virtual="components/bottom.html"-->
