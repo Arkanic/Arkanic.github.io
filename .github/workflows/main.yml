@@ -16,7 +16,7 @@ jobs:
         
       - name: Install jsdoc
         run: |
-          npm i -g jsdoc
+          sudo npm i -g jsdoc
           cd site
           cd projects
           git clone https://github.com/Arkanic/minicheck --depth=1
