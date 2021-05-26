@@ -20,6 +20,7 @@ jobs:
           cd site
           cd projects
           git clone https://github.com/Arkanic/minicheck --depth=1
+          cd minicheck
           jsdoc minicheck.js -d .
       
       - name: Generate sitemap
