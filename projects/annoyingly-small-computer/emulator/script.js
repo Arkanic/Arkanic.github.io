@@ -122,7 +122,7 @@ class AnnoyinglySmallComputer {
             this.rom[x] = "00"
         }
         for(let i in program) {
-            if(!(/[0-9A-Fa-f]{2}/g).test(program[i]) || !(program[i] === "00")) return console.error(`${program[i]} is not an 8-bit hex!`);
+            if(!(/[0-9A-Fa-f]{2}/g).test(program[i])) return console.error(`${program[i]} is not an 8-bit hex!`);
             if(program[i].length != 2) return console.error(`${program[i]} is too short/long!`);
 
             this.rom[i] = program[i];
