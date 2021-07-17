@@ -32,7 +32,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:alt" content="Arkanic">
         <link type="text/css" href="https://arkanic.github.io/src/css/text.css" rel="stylesheet"/>
-        <link type="text/css" href="https://arkanic.github.io/src/css/searchbar.css" rel="stylesheet"/><title>Projects Index</title>    </head>
+        <link type="text/css" href="https://arkanic.github.io/src/css/searchbar.css" rel="stylesheet"/>
+<title>Annoyingly Small Computer</title>
+    </head>
     <body>
         <header>
     <p>Arkanic</p>
@@ -54,18 +56,104 @@
     </nav>
 </header>
         <article>
-            <section><ul>
-<li><a href="./Generating-a-HTML-folder-index/">Generating a HTML folder index</a></li>
-<li><a href="./TLE-dataset-format/">TLE dataset format</a></li>
-<li><a href="./Web-boilerplate/">Web boilerplate</a></li>
-<li><a href="./annoyingly-small-computer/">annoyingly small computer</a></li>
-<li><a href="./crypto/">crypto</a></li>
-<li><a href="./drednot/">drednot</a></li>
-<li><a href="./exdroid/">exdroid</a></li>
-<li><a href="./filecan/">filecan</a></li>
-<li><a href="./isuseless/">isuseless</a></li>
-<li><a href="./minicheck/">minicheck</a></li>
-</ul>            </section>
+            <section>
+<h1>Annoyingly Small Computer</h1>
+<p>A javascript CPU-emulator with a painfully small amount of features, memory, and ROM.</p>
+<h2>About</h2>
+<p>The CPU's instruction set is based of the LMC instruction set, except using 8-bit hex codes, and with two new instructions.</p>
+<p>There is one acclumator, 16 nibbles of ROM (16 indexes), and 4 nibbles of RAM (8 indexes).</p>
+<h2>Instruction set</h2>
+<table>
+    <tr>
+        <th>Position</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>00</td>
+        <td>HLT</td>
+        <td>Stop program</td>
+    </tr>
+    <tr>
+        <td>1[A]</td>
+        <td>ADD</td>
+        <td>Add address with acclumator, store to acclumator</td>
+    </tr>
+    <tr>
+        <td>2[A]</td>
+        <td>SUB</td>
+        <td>Subtract address from acclumator, store to acclumator</td>
+    </tr>
+    <tr>
+        <td>3[A]</td>
+        <td>STO</td>
+        <td>Store acclumator to RAM address (below 8)</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>?</td>
+        <td>Unused</td>
+    </tr>
+    <tr>
+        <td>5[A]</td>
+        <td>LDA</td>
+        <td>Load address (below 8) to acclumator</td>
+    </tr>
+    <tr>
+        <td>6[A]</td>
+        <td>BR</td>
+        <td>Jump to address</td>
+    </tr>
+    <tr>
+        <td>7[A]</td>
+        <td>BRZ</td>
+        <td>Jump to address if acclumator is zero</td>
+    </tr>
+    <tr>
+        <td>8[A]</td>
+        <td>BRA</td>
+        <td>Jump to acclumator</td>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>INP</td>
+        <td>Get user input, store to acclumator</td>
+    </tr>
+    <tr>
+        <td>A0</td>
+        <td>OUT</td>
+        <td>Show acclumator to user (via alert())</td>
+    </tr>
+    <tr>
+        <td>B[A]</td>
+        <td>ZER</td>
+        <td>Set address (below 8) to "0"</td>
+    </tr>
+    <tr>
+        <td>C[A]</td>
+        <td>ONE</td>
+        <td>Set address (below 8) to "1"</td>
+    </tr>
+    <tr>
+        <td>D0</td>
+        <td>?</td>
+        <td>Unused</td>
+    </tr>
+    <tr>
+        <td>E0</td>
+        <td>?</td>
+        <td>Unused</td>
+    </tr>
+    <tr>
+        <td>F0</td>
+        <td>?</td>
+        <td>Unused</td>
+    </tr>
+</table>
+
+<h2>The actual emulator</h2>
+<a href="./emulator">here</a>
+            </section>
             <section>
                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
                     <script type="text/javascript" id="hcb">
