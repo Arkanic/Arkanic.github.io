@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+	    <title>Annoyingly Small Computer</title>
+	    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Annoyingly Small Computer</h1>
+        <a href="../">Back</a>
+        <hr>
+
+        <span>
+            <label for="0">Counter: </label>
+            <p id="counter" name="0"></p>
+        </span>
+
+        <span>
+            <label for="1">Instruction Register: </label>
+            <p id="instruction-register" name="1"></p>
+        </span>
+
+        <span>
+            <label for="2">Address Register: </label>
+            <p id="address-register" name="2"></p>
+        </span>
+
+        <hr>
+        <label for="3">Rom: </label>
+        <p id="rom" class="memarray" name="3"></p>
+
+        <hr>
+        <label for="4">Ram: </label>
+        <p id="ram" class="memarray" name="4"></p>
+
+        <button id="cycle-once">Cycle</button>
+
+        <hr>
+        <label for="5">Program Input: </label>
+        <textarea id="program-input" rows="16" cols="2"></textarea>
+        <br>
+        <button id="program-submit">Load to ROM</button>
+
+	    <script src="script.js"></script>
+    </body>
+</html>
