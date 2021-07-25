@@ -23,6 +23,13 @@ jobs:
           cd minicheck
           jsdoc minicheck.js -d .
       
+      - name: Install latest Rust nightly
+        uses: actions-rs/toolchain@v1
+        with:
+            toolchain: nightly
+            override: true
+            components: rustfmt, clippy
+      
       - name: build game-of-life
         run: |
           git clone https://github.com/Arkanic/game-of-life
