@@ -23,14 +23,6 @@ jobs:
           cd minicheck
           jsdoc minicheck.js -d .
       
-      - name: build game-of-life
-        run: |
-          git clone https://github.com/Arkanic/game-of-life
-          cd game-of-life
-          sudo ./init
-          npm run build
-          cp -r dist ../site/projects/game-of-life/dist
-      
       - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1.6.1
         with:
