@@ -30,6 +30,7 @@ jobs:
         run: |
           git clone https://github.com/Arkanic/game-of-life
           cd game-of-life
+          sudo npm i -g wasm-pack
           sudo ./init
           npm run build
           cp -r dist ../site/projects/game-of-life/dist
