@@ -18,4 +18,4 @@ echo "</ul><!--#include virtual=\"components/bottom.html\"-->" >> $OUTPUT
 truncate -s-2 $OUTPUTJSON
 echo "]}" >> $OUTPUTJSON
 
-echo "done!!"
+echo "done!"
