@@ -47,7 +47,7 @@ function generateGif(elem, renderFunction, duration=1, fps=30) {
 
     let capturer = new CCapture({
         format: "gif",
-        workersPath: "/js/",
+        workersPath: "./js/",
         framerate: fps,
         verbose: true
     });
