@@ -9,7 +9,7 @@ let spinY = document.getElementById("spin-y");
 let spinZ = document.getElementById("spin-z");
 
 let image = new Image();
-image.src = "../img/cube.png";
+image.src = "./img/cube.png";
 let texture = new THREE.Texture(image);
 image.addEventListener("load", () => {
     texture.needsUpdate = true;
