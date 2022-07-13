@@ -41,6 +41,9 @@ jobs:
       - name: Generate SSIs
         run: dessi --root=./site --target=./dist --source=./site
       
+      - name: Add Keeweb
+        run: cp -r keeweb ./dist/keeweb
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
