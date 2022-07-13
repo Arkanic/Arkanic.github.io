@@ -23,6 +23,11 @@ jobs:
           cd minicheck
           jsdoc minicheck.js -d .
       
+      - name: build keeweb
+        run: |
+          curl https://raw.githubusercontent.com/keeweb/keeweb/develop/dev-env.sh | bash -
+          grunt
+      
       - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1.6.1
         with:
