@@ -25,6 +25,7 @@ jobs:
       
       - name: build keeweb
         run: |
+          npm i grunt --save-dev
           curl https://raw.githubusercontent.com/keeweb/keeweb/develop/dev-env.sh | bash -
           grunt
       
