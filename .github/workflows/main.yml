@@ -27,6 +27,7 @@ jobs:
         run: |
           npm i grunt --save-dev
           curl https://raw.githubusercontent.com/keeweb/keeweb/develop/dev-env.sh | bash -
+          cd keeweb
           grunt
       
       - name: Generate sitemap
