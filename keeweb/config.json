@@ -1,6 +1,6 @@
 {
     "settings": {
-        "gdrive": true,
+        "gdrive": "true",
         "gdriveClientId": "899577915352-b2q3uu8b0lrjpvq5l1m5egkftun5s3gs.apps.googleusercontent.com"
     }
 }
