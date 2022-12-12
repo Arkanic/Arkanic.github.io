@@ -23,6 +23,11 @@ jobs:
           cd minicheck
           jsdoc minicheck.js -d .
       
+      - name: add phraser
+        run: |
+          git clone https://github.com/Arkanic/phraser
+          mv phraser/phraser site/phraser
+      
       - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1.6.1
         with:
