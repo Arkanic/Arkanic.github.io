@@ -153,7 +153,7 @@ function generateHTMLParticleSection(parentId) {
  * @returns {string}
  */
 function generateUrl(protocol, host, escapedString) {
-    return `${protocol}//sentencegenerator.tal0s.repl.co/#${escapedString}`;
+    return `${protocol}//arkanic.github.io/sengen/#${escapedString}`;
 }
 
 // the list of ids
