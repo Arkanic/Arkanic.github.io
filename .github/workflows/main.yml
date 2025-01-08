@@ -15,7 +15,7 @@ jobs:
         run: mkdir dist
       
       - name: Add site contents
-        run: cp -r site dist
+        run: cp -r site/* dist
 
       - name: add phraser
         run: |
