@@ -3,8 +3,6 @@ name: Github Pages
 on:
   push:
     branches: [ master ]
-  schedule:
-    - cron: "0 13 * * 1"
 
 jobs:
   deploy:
@@ -13,40 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v2.1.2
-        
-      - name: build minicheck jsdoc
-        run: |
-          sudo npm i -g jsdoc
-          cd site
-          cd projects
-          git clone https://github.com/Arkanic/minicheck --depth=1
-          cd minicheck
-          jsdoc minicheck.js -d .
+      - name: Make output folder
+        run: mkdir dist
       
+      - name: Add site contents
+        run: cp -r site dist
+
       - name: add phraser
         run: |
           git clone https://github.com/Arkanic/phraser
-          mv phraser/phraser site/phraser
-      
-      - name: Generate sitemap
-        uses: cicirello/generate-sitemap@v1.6.1
-        with:
-          path-to-root: ./site
-          base-url-path: https://Arkanic.github.io/
-      
-      - name: Generate Projects Index
-        run: |
-          chmod a+x ./genIndex.sh
-          ./genIndex.sh
-      
-      - name: Install dependencies
-        run: |
-          sudo npm i -g dessi
-      
-      - name: Generate SSIs
-        run: dessi --root=./site --target=./dist --source=./site
+          mv phraser/phraser ./dist/phraser
       
       - name: Add Keeweb
         run: cp -r keeweb ./dist/keeweb

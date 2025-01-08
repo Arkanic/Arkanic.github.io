@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: google20f120b1372947d9.html
-Disallow: /components/
-Sitemap: https://arkanic.github.io/sitemap.xml
